@@ -11,7 +11,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  Font-size: 62.5%;/*1rem = 10px*/
+  font-size: 62.5%; /*1rem = 10px*/
 }
 
 /* Sections
@@ -357,50 +357,157 @@ body {
   background-image: url("../img/background/bkgdeskedit.jpeg");
   background-size: cover;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.4em;
 }
 
 .header {
   background-image: url("../img/background/degradado.jpg");
   background-size: cover;
+  padding: 2rem;
+  font-size: 2rem;
+
+  /*propiedades para fijar el header*/
+
+  position: fixed;
+  left: 0; /*fija el elemento a la izq*/
+  top: 0; /*fija el elemento a arriba*/
+  right: 0;
 }
 
-.header a{
+.header a {
   text-decoration: none;
+  color: #333;
 }
 
-.container{
-  width: 85%;
-  max-width: 85rem;
+.container {
+  width: 85%; /*para que siempre ocupe el % indicado del espacio disponible*/
+  max-width: 1800px;
+  margin: 0 auto; /*Para centrar contenido DIV*/
 }
 
-.logo-nav-container{
+.logo-nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*agrega espacio entre los items */
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.navigation ul{
+.logo {
+  letter-spacing: 6px;
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation ul li{
+.navigation ul li {
   display: inline-block;
 }
 
-.navigation ul li a{
+.navigation ul li a {
   display: block;
   padding: 0.5rem 1rem;
   transition: all 0.4s linear;
+  border-radius: 5px;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
   background-color: #d8e3dd;
+}
+
+.main {
+  padding-top: 15rem;
 }
 
 h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 10rem;
   font-weight: 600;
+  margin: 4rem 0rem 12rem 0rem;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.footer {
+  background-image: url("../img/background/degradado.jpg");
+  background-size: cover;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 968px) {
+  .main {
+    padding-top: 30rem;
+  }
+
+  .container {
+    width: 85%; /*para que siempre ocupe el % indicado del espacio disponible*/
+    max-width: 767px;
+    margin: 0 auto; /*Para centrar contenido DIV*/
+  }
+
+  .logo {
+    letter-spacing: 6px;
+    font-size: 3rem;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .menu_icon {
+    display: block;
+    cursor: pointer;
+    padding: 1rem 0rem;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: 1rem 0rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .navigation ul li a:hover {
+    background-color: #d8e3dd;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .footer {
+    background-image: url("../img/background/degradado.jpg");
+    background-size: cover;
+    padding: 1rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
