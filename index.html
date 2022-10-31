@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,46 +21,107 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container logo-nav-container">
+    <header id="header" class="contenedor">
+
+      <div id="contenedor-logo">
         <a href="#" class="logo">Mariné Romero</a>
-        <span class="menu_icon"
-          ><img src="/img/Iconos/menu24px.png" alt="menu_icon"
-        /></span>
-        <nav class="navigation">
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="acercaDeMi.html">Acerca de mi</a></li>
-            <li><a href="especialidades.html">Especialidades</a></li>
-            <li><a href="turnos.html">Turnos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <h1 class="Titulo">Psicología</h1>
       </div>
 
-      <div class="container">
-        <blockquote class="quote-container">
-          <p>
-            <i
-              >“Ser completamente honesto con uno mismo es un buen
-              ejercicio”.</i
-            >
-          </p>
-        </blockquote>
+      <div id="contenedor-menu">
+        <span id="menu_icon">
+          <img src="./img/Iconos/logoMenuNegro24px.png" alt="menu_icon"
+        /></span>
       </div>
+
+      <div id="contenedor contenedor-redes">
+        <ul id="ul-redes" class="ul-redes">
+          <li>
+            <a href="#"
+              ><img
+                src="./img/Iconos/logoLinkedinnegro24px.png"
+                alt="logo linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./img/Iconos/logoInstagramnegro24px.png"
+                alt="logo Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/Iconos/logoWspNegro24px.png" alt="logo Whatssap"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+
+        <nav id="nav" class="nav">
+          <ul id="ul-nav" class="show">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./acercaDeMi.html">Acerca de mi</a></li>
+            <li><a href="./especialidades.html">Especialidades</a></li>
+            <li><a href="./turnos.html">Turnos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-index">
+      <section id="main-portada">
+        <div id="portada-titulo">
+          <h1>Psicología</h1>
+        </div>
+
+        <div id="portada-descripcion">
+          <h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            consequatur tempore amet, distinctio sunt omnis magni iste deserunt
+            asperiores minima ab, autem a sint est qui voluptate ex nisi
+            mollitia?
+          </h2>
+        </div>
+      </section>
     </main>
+
+    <section id="especialidades">
+      <div class="contenedor contenedor-especialidades">
+        <ul>
+          <li>
+            <a href="./html/especialidades.html"
+              ><img
+                src="./img/especialidades/psicoterapiaIndividual.jpg"
+                alt="Psicoterapia Individual"
+            /></a>
+          </li>
+          <li>
+            <a href="./html/especialidades.html"
+              ><img
+                src="./img/especialidades/barrasAccess.jpg"
+                alt="Access Bars"
+            /></a>
+          </li>
+          <li>
+            <a href="./html/especialidades.html"
+              ><img
+                src="./img/especialidades/psicologiaOrganizacional.jpg"
+                alt="Psicología Organizacional"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <footer class="footer">
-      <div class="container">
+      <div class="contenedor">
         <p>Designed by @CharliePelayes - 2022</p>
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="/js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

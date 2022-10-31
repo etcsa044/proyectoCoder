@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  var menuBtn = $(".menu_icon"),
-    menu = $(".navigation ul");
+  var menuBtn = $("#menu_icon"),
+    menu = $("#ul-nav");
 
   menuBtn.click(function () {
     if (menu.hasClass("show")) {
