@@ -356,6 +356,7 @@ template {
 body {
   background-image: url("../img/background/bkgdeskedit.jpeg");
   background-size: cover;
+  background-position:initial;
   font-size: 1.2rem;
   line-height: 1.4em;
 }
@@ -424,29 +425,48 @@ body {
 }
 
 .main {
-  padding-top: 15rem;
+  padding-top: 5rem;
+}
+
+.parrafo-container{
+  justify-content: center;
 }
 
 h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 10rem;
-  font-weight: 600;
-  margin: 4rem 0rem 12rem 0rem;
+  font-weight: 600;  
+}
+
+.quote-container{
+  display: flex;
+}
+
+.quote-container p{
+  display: block;
+  text-align: center;
+  align-content: center;
 }
 
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.8rem;
-  margin-bottom: 4rem;
 }
 
 .footer {
   background-image: url("../img/background/degradado.jpg");
   background-size: cover;
-  padding: 3rem 0rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0rem 0rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
+
+
+/*############################################################################################################*/
 
 @media only screen and (max-width: 968px) {
   .main {
@@ -511,3 +531,37 @@ p {
     margin-top: 1rem;
   }
 }
+
+
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*----------------------------------------------------CONTACTO------------------------------------------------*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+
+
+.formulario-contacto{
+  background-color: aqua;
+  display: flex;
+}
+
+
+
+.formulario-contacto ul{
+  background-color: rgb(177, 43, 166);
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+
+li{
+  background-color: tomato;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+la
