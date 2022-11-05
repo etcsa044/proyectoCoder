@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var menuBtn = $("#menu_icon"),
+  var menuBtn = $("#menu-icon"),
     menu = $("#ul-nav");
 
   menuBtn.click(function () {
