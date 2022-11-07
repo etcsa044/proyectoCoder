@@ -102,11 +102,6 @@ body {
 }
 
 
-.icono-redes:hover{
-background-color: #e8c3a8d3;
-border-radius: 25px;
-}
-
 #nav {
   grid-area: nav;
 }
@@ -164,29 +159,34 @@ header ul {
 /*---------------------------------------------------MAIN-------------------------------------------------*/
 
 #main-portada {
-  margin: 1rem 0.5rem;
+  margin: 2rem 1rem;
+  height: 15rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, #d8e3dd, #e8c3a8);
-  background-size: cover ;
+  background-image: url(../img/background/degradado.jpg);
+  box-shadow: 1px 1px 3px;
+  background-size:cover;
+  /* background-position: 12px 20px; */
   border-radius: 2px;
+  
 }
 
 #portada-titulo {
-  margin: 1rem 0 0 0;
-  padding-top: 1rem;
+  margin: .2rem 0 0 .2rem;
   width: 100%;
-  font-size: 2.3rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
 }
 
 #portada-descripcion {
   margin: 0rem 0rem 0rem 0rem;
   padding: 1rem;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 100;
 }
 
 .contenedor-especialidades ul {
@@ -245,4 +245,74 @@ header ul {
 }
 #li-especialidad-psorganizacional {
   background-image: url(../img/especialidades/psicologiaOrganizacional.jpg);
+}
+
+
+
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*----------------------------------------------------CONTACTO------------------------------------------------*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+
+
+
+.container-contacto{
+  width: 85%; /*para que siempre ocupe el % indicado del espacio disponible*/
+  max-width: 1800px;
+  height: 40rem;
+  margin: 10rem auto; /*Para centrar contenido DIV*/
+}
+
+.formulario-contacto{
+  background-color: #d8e3dd52;
+  list-style: none;
+  width: 80rem ;
+  margin:0 auto;
+  padding-bottom: 1rem;
+}
+
+.formulario-contacto ul{
+  margin-top: 23px;
+  padding: 2rem 0;
+}
+
+.formulario-contacto ul li{
+  margin: 1rem;
+  display: flex;
+  justify-content:space-between;
+}
+
+.formulario-contacto label{
+  margin: 0 0 5px 0;
+  font-size: 2rem;
+}
+
+.formulario-contacto ul input{
+  width: 50rem;
+}
+
+.texarea-contacto{
+  margin-left: 6rem;
+  width: 50rem;
+  height: 25rem;
+}
+
+.botones{
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content:end;
+}
+
+.botones input{
+  background-color: #e8c3a869;
+  width: 15rem;
+  border:none;
+  border-radius: 5px;
+  margin: 0rem 1rem 0rem 1.5rem;
+  padding: 1rem;
 }
