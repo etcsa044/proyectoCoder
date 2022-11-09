@@ -40,16 +40,29 @@ ul {
 *--------------------------------------------------Mobile First------------------------------------------------
 */
 
-/*---------------------------------------------------HEADER-------------------------------------------------*/
+/*-----------------------------------------------------BODY-------------------------------------------------*/
 
 body {
-  background-color: #d8e3d8;
+  background-image: url(../img/background/degradado.jpg);
+  background-size: cover;
 }
+
+/**
+* 04. INDEX
+*
+*--------------------------------------------------Mobile First------------------------------------------------
+*/
+
+/*---------------------------------------------------HEADER-------------------------------------------------*/
 
 #header {
   background-image: url(../img/background/bkgdeskedit.jpeg);
-  background-size:150%;
+  background-size: 150%;
   background-position: 0% 99%;
+  position:fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-areas:
     "logo redes redes"
@@ -61,16 +74,16 @@ body {
 #contenedor-logo {
   grid-area: logo;
   font-size: 2rem;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 400;
   letter-spacing: 6px;
   line-height: 20px;
   margin-left: 0.3rem;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
-#contenedor-logo img{
+#contenedor-logo img {
   width: 100px;
   height: 90px%;
 }
@@ -101,7 +114,6 @@ body {
   margin: 0px;
 }
 
-
 #nav {
   grid-area: nav;
 }
@@ -116,29 +128,28 @@ header ul {
   margin-left: 12px;
 }
 
-
 #ul-nav {
   font-size: 3rem;
   margin: 0 3rem 0 3rem;
   text-align: left;
 }
 
-#ul-nav li{
+#ul-nav li {
   /* border-bottom: solid rgb(228, 225, 225) .5px; */
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   letter-spacing: 1.5px;
   font-size: 1.8rem;
   font-weight: 100;
   width: 95%;
   margin: 1rem 0;
-  padding: .2rem 0 .2rem 1rem;
-  box-shadow: rgb(138, 134, 138) 1px 1px .5px;
+  padding: 0.2rem 0 0.2rem 1rem;
+  box-shadow: rgb(138, 134, 138) 1px 1px 0.5px;
 }
 
 #ul-nav li:hover {
   background-color: #e8c3a8d3;
   border-radius: 3px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .nav ul {
@@ -153,39 +164,77 @@ header ul {
 /**
 * 04. INDEX
 *
+*----------------------------------------------------Tablet---------------------------------------------------
+*/
+
+/*---------------------------------------------------HEADER-------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: red;
+  }
+}
+
+/**
+* 04. INDEX
+*
 *--------------------------------------------------Mobile First------------------------------------------------
 */
 
 /*---------------------------------------------------MAIN-------------------------------------------------*/
 
+
 #main-portada {
-  margin: 2rem 1rem;
-  height: 15rem;
+  margin: 8.5rem 1rem;
+  height: 70vh;
+  position: relative;
   display: flex;
   align-items: center;
+  /* justify-content: space-around; */
   flex-direction: column;
-  background-image: url(../img/background/degradado.jpg);
   box-shadow: 1px 1px 3px;
-  background-size:cover;
-  /* background-position: 12px 20px; */
-  border-radius: 2px;
-  
+  background-size: cover;
+  border-radius: 2px;  
 }
 
-#portada-titulo {
-  margin: .2rem 0 0 .2rem;
+#main-portada::before{
+  content: "";
+  background-image: url(../img/background/bkgdeskedit.jpeg);
+  background-size:auto;
+  background-position: -780px -620px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+
+}
+
+
+#portada-titulo h1{
+  position: relative;
+  margin: 2rem 0 0 0;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 3rem;
   letter-spacing: 4px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-align: center;
 }
 
-#portada-descripcion {
-  margin: 0rem 0rem 0rem 0rem;
+#portada-descripcion h2{
+  position: relative;
+  margin: 4rem 3rem 5rem 3rem;
   padding: 1rem;
   text-align: left;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
+  font-size: 3rem;
   font-weight: 100;
 }
 
@@ -247,8 +296,6 @@ header ul {
   background-image: url(../img/especialidades/psicologiaOrganizacional.jpg);
 }
 
-
-
 /*############################################################################################################*/
 /*############################################################################################################*/
 /*############################################################################################################*/
@@ -257,61 +304,59 @@ header ul {
 /*############################################################################################################*/
 /*############################################################################################################*/
 
-
-
-.container-contacto{
+.container-contacto {
   width: 85%; /*para que siempre ocupe el % indicado del espacio disponible*/
   max-width: 1800px;
   height: 40rem;
   margin: 10rem auto; /*Para centrar contenido DIV*/
 }
 
-.formulario-contacto{
+.formulario-contacto {
   background-color: #d8e3dd52;
   list-style: none;
-  width: 80rem ;
-  margin:0 auto;
+  width: 80rem;
+  margin: 0 auto;
   padding-bottom: 1rem;
 }
 
-.formulario-contacto ul{
+.formulario-contacto ul {
   margin-top: 23px;
   padding: 2rem 0;
 }
 
-.formulario-contacto ul li{
+.formulario-contacto ul li {
   margin: 1rem;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.formulario-contacto label{
+.formulario-contacto label {
   margin: 0 0 5px 0;
   font-size: 2rem;
 }
 
-.formulario-contacto ul input{
+.formulario-contacto ul input {
   width: 50rem;
 }
 
-.texarea-contacto{
+.texarea-contacto {
   margin-left: 6rem;
   width: 50rem;
   height: 25rem;
 }
 
-.botones{
+.botones {
   font-size: 2rem;
   display: flex;
   width: 100%;
   margin: 0 auto;
-  justify-content:end;
+  justify-content: end;
 }
 
-.botones input{
+.botones input {
   background-color: #e8c3a869;
   width: 15rem;
-  border:none;
+  border: none;
   border-radius: 5px;
   margin: 0rem 1rem 0rem 1.5rem;
   padding: 1rem;
