@@ -30,6 +30,10 @@ a {
   color: black;
 }
 
+.active{
+  font-weight: 400;
+}
+
 ul {
   list-style: none;
 }
@@ -57,9 +61,10 @@ body {
 
 #header {
   background-image: url(../img/background/bkgdeskedit.jpeg);
+  width: 100%;
   background-size: 150%;
   background-position: 0% 99%;
-  position:fixed;
+  position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
@@ -76,11 +81,15 @@ body {
   font-size: 2rem;
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
-  letter-spacing: 6px;
-  line-height: 20px;
-  margin-left: 0.3rem;
+  letter-spacing: 10px;
+  line-height: 25px;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
+}
+
+#contenedor-logo a:hover {
+  color: #813313;
 }
 
 #contenedor-logo img {
@@ -135,14 +144,13 @@ header ul {
 }
 
 #ul-nav li {
-  /* border-bottom: solid rgb(228, 225, 225) .5px; */
   font-family: "Oxygen", sans-serif;
   letter-spacing: 1.5px;
   font-size: 1.8rem;
   font-weight: 100;
-  width: 95%;
+  width: 100%;
   margin: 1rem 0;
-  padding: 0.2rem 0 0.2rem 1rem;
+  padding: 0.2rem 3.5rem 0.2rem 1rem;
   box-shadow: rgb(138, 134, 138) 1px 1px 0.5px;
 }
 
@@ -150,6 +158,11 @@ header ul {
   background-color: #e8c3a8d3;
   border-radius: 3px;
   transition: all 0.2s;
+}
+
+#ul-nav li a:hover {
+  color: #813313;
+  font-weight: 300px;
 }
 
 .nav ul {
@@ -164,22 +177,99 @@ header ul {
 /**
 * 04. INDEX
 *
-*----------------------------------------------------Tablet---------------------------------------------------
+*---------------------------------------------------TABLET------------------------------------------------
 */
 
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  body {
-    background-color: yellow;
+@media only screen and (min-width: 955px) {
+
+
+  #header {
+    background-image: url(../img/background/bkgdeskedit.jpeg);
+    padding-top: 1rem;
+    width: 100%;
+    background-size: 150%;
+    background-position: 0% 99%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-areas:
+      "logo nav nav redes";
+    grid-template-columns: repeat(4, 1fr);
   }
+
+
+  #contenedor-logo {
+    grid-area: logo;
+    font-size: 2.3rem;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    letter-spacing: 10px;
+    line-height: 25px;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #contenedor-redes{
+    align-items: center;
+  }
+
+
+  #contenedor-redes ul {
+    grid-area: redes;
+    margin-right: 2rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ul-redes{
+    margin-bottom: 0;
+  }
+
+  .ul-redes li{
+    padding-left: 1rem;
+  }
+
+
+  #nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #ul-nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+  #ul-nav li {
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+    font-weight: 100;
+    width: auto;
+    margin: 0;
+    padding: .2rem 2rem 0.2rem 2rem;
+    box-shadow: none;
+  }
+
+
+  #menu-icon{
+    display: none;
+  }
+
+
 }
 
-@media only screen and (min-width: 769px) {
-  body {
-    background-color: red;
-  }
-}
 
 /**
 * 04. INDEX
@@ -189,38 +279,33 @@ header ul {
 
 /*---------------------------------------------------MAIN-------------------------------------------------*/
 
-
 #main-portada {
-  margin: 8.5rem 1rem;
+  margin: 8.5rem 1rem 3rem 1rem;
   height: 70vh;
   position: relative;
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
   flex-direction: column;
   box-shadow: 1px 1px 3px;
   background-size: cover;
-  border-radius: 2px;  
+  border-radius: 10px;
 }
 
-#main-portada::before{
+#main-portada::before {
   content: "";
   background-image: url(../img/background/bkgdeskedit.jpeg);
-  background-size:auto;
-  background-position: -780px -620px;
+  background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.6;
-
+  opacity: 0.65;
 }
 
-
-#portada-titulo h1{
+#portada-titulo h1 {
   position: relative;
-  margin: 2rem 0 0 0;
+  margin: 7% 0 0 2%;
   width: 100%;
   font-size: 3rem;
   letter-spacing: 4px;
@@ -228,15 +313,105 @@ header ul {
   text-align: center;
 }
 
-#portada-descripcion h2{
+#portada-descripcion h2 {
   position: relative;
-  margin: 4rem 3rem 5rem 3rem;
+  margin: 10% 1.5rem 5rem 10%;
   padding: 1rem;
   text-align: left;
-  font-family: "Oxygen", sans-serif;
-  font-size: 3rem;
-  font-weight: 100;
+  font-family: "Tangerine", cursive;
+  font-size: 4rem;
+  font-weight: 300;
 }
+
+/**
+* 04. INDEX
+*
+*----------------------------------------------------Tablet---------------------------------------------------
+*/
+
+/*---------------------------------------------------MAIN-------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 954px) {
+  #main-portada {
+    margin: 8.5rem 1rem 3rem 1rem;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  #main-portada::before {
+    content: "";
+    background-image: url(../img/background/bkgdeskedit.jpeg);
+    background-size: cover;
+    background-position: 0px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+  }
+
+  #portada-titulo h1 {
+    position: relative;
+    margin: 4rem 0 0 0;
+    width: 100%;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-family: "Oxygen", sans-serif;
+    text-align: center;
+  }
+
+  #portada-descripcion h2 {
+    margin: 4rem 1.5rem 2rem 3rem;
+    padding: 1rem;
+    text-align: left;
+    font-family: "Tangerine", cursive;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+}
+
+/* @media only screen and (min-width: 769px) {
+  body {
+    background-color: red;
+  } */
+/* } */
+
+/**
+* 04. INDEX
+*
+*--------------------------------------------------Mobile First------------------------------------------------
+*/
+
+/*---------------------------------------------------FOOTER-------------------------------------------------*/
+
+.footer {
+  background-color: #e8c3a8d3;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: static;
+  bottom: 0;
+}
+
+.contenedor-footer {
+  font-family: "Oxygen", sans-serif;
+}
+
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*----------------------------------------------------ESPECIALIDADES------------------------------------------*/
+/*############################################################################################################*/
+/*############################################################################################################*/
+/*############################################################################################################*/
 
 .contenedor-especialidades ul {
   display: flex;
