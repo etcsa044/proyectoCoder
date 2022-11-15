@@ -27,7 +27,7 @@ html {
 */
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .active{
@@ -38,6 +38,18 @@ ul {
   list-style: none;
 }
 
+
+/* contenedores con altura de viewport hight 50vh*/
+
+.vh-50{
+  height: 50vmin;
+}
+
+.vh-75{
+  height: 75vmin;
+}
+
+
 /**
 * 04. INDEX
 *
@@ -47,8 +59,7 @@ ul {
 /*-----------------------------------------------------BODY-------------------------------------------------*/
 
 body {
-  background-image: url(../img/background/degradado.jpg);
-  background-size: cover;
+background-color: #fff;
 }
 
 /**
@@ -59,24 +70,105 @@ body {
 
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
-#header {
+.header {
   background-image: url(../img/background/bkgdeskedit.jpeg);
-  width: 100%;
-  background-size: 150%;
-  background-position: 0% 99%;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-areas:
-    "logo redes redes"
-    "logo menu menu"
-    "nav nav nav";
-  grid-template-columns: repeat(3, 1fr);
+  background-position: 0 -290px;
+  background-size: cover;
+  transition: all 1s;
+  
 }
 
-#contenedor-logo {
+/* Logo */
+
+.logo-text{
+  font-size: 4.5rem;
+  letter-spacing: 7px;  
+}
+
+
+
+.nav-a{
+  color: rgb(80, 35, 1);
+  font-size: 1.6rem;
+  border-radius: 3px;
+}
+
+.nav-a:hover{
+  background-color: rgb(230, 195, 175);
+  transition: all .7s;
+}
+
+.header-h1{
+  color: rgb(80, 35, 1);
+  font-size: 10rem;
+  font-family: "Oxygen", sans-serif;
+  line-height: 12px;
+  font-weight: 400;
+  padding: 50px 0 72px 0;
+  margin: 0 0 0 -6px;
+}
+
+.header-h2{
+  color: #000;
+  font-size: 3rem;
+  padding: 0px 0;
+}
+
+
+.container-titulo{
+  margin: 40px 0 0 150px;
+}
+
+
+
+
+/**
+* 04. INDEX
+*
+*--------------------------------------------------Mobile First------------------------------------------------
+*/
+
+/*---------------------------------------------------MAIN-------------------------------------------------*/
+
+
+
+.especialidades-texto h2{
+  color: rgb(80, 35, 1);
+  font-size: 4rem;
+}
+
+.especialidades-texto h3{
+  font-size: 3rem;
+}
+
+.especialidades-texto p{
+  font-size: 2rem;
+}
+
+.card-img-filter{
+   filter: brightness(.5);
+}
+
+
+.card{
+    
+  clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);  
+}
+
+.card-effect:hover .card{
+  transition:all .7s;
+  clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+
+
+
+
+
+
+
+
+/* #contenedor-logo {
   grid-area: logo;
   font-size: 2rem;
   font-family: "Oxygen", sans-serif;
@@ -412,6 +504,15 @@ header ul {
 /*############################################################################################################*/
 /*############################################################################################################*/
 /*############################################################################################################*/
+
+
+.contenedor-carrousel{
+  margin: 0 auto;
+  background-color: #813313;
+  width: 70%;
+  height: 5rem;
+}
+
 
 .contenedor-especialidades ul {
   display: flex;
