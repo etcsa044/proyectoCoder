@@ -17,6 +17,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS PROPIO-->
   <link rel="stylesheet" href="./css/style.css" />
 
@@ -38,21 +43,21 @@
       <nav class="row justify-content-between align-items-center text-uppercase pt-5">
         <!-- logo -->
         <a href="#" class="col-auto text-reset logo-text">
-          <img src="./img/Iconos/flower_nature_icon.png" alt="Logo Jazmin" class="img-logo">Mariné Romero
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
         </a>
         <!-- links -->
         <div class="col-auto contenedor-a">
-          <a href="#" class="text-reset px-4 nav-a">Inicio</a>
-          <a href="#" class="text-reset px-4 nav-a">Especialidades</a>
-          <a href="#" class="text-reset px-4 nav-a">Turnos</a>
-          <a href="#" class="text-reset px-4 nav-a">Contactos</a>
-          <a href="#" class="text-reset px-4 nav-a">Sobre Mi</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Inicio</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Especialidades</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Turnos</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Contactos</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Sobre Mi</a>
         </div>
       </nav>
 
       <!-- descripcion -->
-      <div class="row h-100 d-flex align-items-center">
-        <div class="col-10 container-titulo">
+      <div class="row h-30 h-md-100 h-lg-100 d-flex align-items-center">
+        <div class="col-12 col-lg-10 container-titulo">
           <!-- Titulo -->
           <h2 class="header-h2 text-capitalize">20 años pensando la</h2>
           <h1 class="header-h1 text-capitalize">Psicología</h1>
@@ -64,13 +69,14 @@
   </header>
 
 
+
   <!-- Especialidades -->
-  <main class="main-index vh-50">
+  <main class="main-index mb-5">
     <section class="container">
-      <div class="row">
+      <div class="row justify-content-md-center">
         <!-- textos -->
-        <div class="col-12 text-center especialidades-texto">
-          <h2 class="especialidades-h2 text-uppercase">Especialidades</h2>
+        <div class="col-12 text-center especialidades-texto mb-5">
+          <h2 class="especialidades-h2 text-uppercase mb-4">Especialidades</h2>
           <h3 class="text-capitalize">Todo mi conocimiento a tu disposición.</h3>
           <p class="text-muted">Estas son algunas de las áreas en las que me especializo, si no encontrás lo que buscás,
             no dudes en dejarme tu
@@ -81,10 +87,13 @@
         <!-- cards -->
 
         <!-- card #1 -->
-        <article class="col-4 card-effect">
-          <div class="card" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="2500">
-            <img src="./img/especialidades/psicoterapiaIndividual600x391.jpg" alt="PsicoTerapia" class="card-img card-img-filter">
-            <div class="card-img-overlay d-flex text-white flex-column justify-content-center align-items-center">
+        <article class="col-12 col-md-6 col-lg-4  mb-sm-2 mt-md-1 mt-lg-0 card-effect card-text-style">
+
+          <div class="card" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="500">
+            <img src="./img/especialidades/psicoterapiaIndividual600x391.jpg" alt="PsicoTerapia"
+              class="card-img card-img-filter">
+
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
               <h4>Psicoterapia</h4>
 
               <p class="text-capitalize">un espacio para conectarte con vos y tus sentimientos</p>
@@ -95,11 +104,11 @@
         </article>
 
         <!-- card #2 -->
-        <article class="col-4 card-effect">
-          <div class="card" data-aos="flip-up" data-aos-duration="2750" >
+        <article class="col-12 col-md-6 col-lg-4 mt-3 mt-sm-3 mt-md-1 mt-lg-0 card-effect card-text-style">
+          <div class="card" data-aos="zoom-out-up" data-aos-duration="500">
             <img src="./img/especialidades/access-bars600x391.gif" alt="Terapia de Barras"
               class="card-img card-img-filter">
-            <div class="card-img-overlay d-flex text-white flex-column justify-content-center text-center">
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
               <h4>Terapia de Barras</h4>
 
               <p class="text-capitalize">Abrí tu mente a un mundo de infinitas posibilidades</p>
@@ -110,14 +119,14 @@
         </article>
 
         <!-- card #3 -->
-        <article class="col-4 card-effect">
-          <div class="card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+        <article class="col-12 col-md-6 col-lg-4 mt-3 mt-sm-3 mt-md-1 mt-lg-0 card-effect card-text-style">
+          <div class="card" data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
             <img src="./img/especialidades/psicologiaOrganizacional600x391.jpg" alt="Psicología Organizacional"
               class="card-img card-img-filter">
-              <div class="card-img-overlay d-flex text-white flex-column justify-content-center align-items-center">
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
               <h4>Psicología Organizacional</h4>
 
-              <p class="text-capitalize">Entendé como Piensa e intereactua el capital humano de tu empresa</p>
+              <p class="text-capitalize">Entendé el comportamiento del capital humano de tu empresa</p>
 
               <a href="#" class="text-reset">Conocé Más</a>
             </div>
@@ -127,10 +136,43 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
 
-  <footer class="">
-    <div>
-      <p>Designed by @CharliePelayes - 2022</p>
+  <footer class="footer-style text-white mt-5 py-5">
+    <div class="container">
+      <!-- LOGO -->
+      <div class="row">
+        <a href="" class="col-12 col-md-4 text-reset text-uppercase d-flex align-items-center justify-content-center logo-text-footer">
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
+        </a>
+
+        <!-- MENU -->
+        <ul class="col-6 col-md-4 d-flex flex-column align-items-center list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2"><strong>recursos</strong> </li>
+          <li class="mb-2"><a href="#" class="text-reset">Inicio</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Especialidades</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Turnos</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Contacto</a></li>
+          <li class=""><a href="#" class="text-reset"></a>Sobre Mi</li>
+        </ul>
+
+        <!-- REDES SOCIALES -->
+
+        <ul class="col-6 col-md-4 list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2 text-center"><strong>redes</strong></li>
+
+          <li class="font-weight-bold text-uppercase d-flex justify-content-center mt-5">
+            <!-- Instagram -->
+            <a href="" class="text-reset me-5"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <!-- Linkedin -->
+            <a href="" class="text-reset me-5"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <!-- Whatsapp -->
+            <a href="" class="text-reset "><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
   </footer>
 

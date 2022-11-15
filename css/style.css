@@ -30,7 +30,7 @@ a {
   color: #fff;
 }
 
-.active{
+.active {
   font-weight: 400;
 }
 
@@ -38,17 +38,15 @@ ul {
   list-style: none;
 }
 
-
 /* contenedores con altura de viewport hight 50vh*/
 
-.vh-50{
+.vh-50 {
   height: 50vmin;
 }
 
-.vh-75{
+.vh-75 {
   height: 75vmin;
 }
-
 
 /**
 * 04. INDEX
@@ -59,7 +57,7 @@ ul {
 /*-----------------------------------------------------BODY-------------------------------------------------*/
 
 body {
-background-color: #fff;
+  background-color: #fff;
 }
 
 /**
@@ -75,30 +73,106 @@ background-color: #fff;
   background-position: 0 -290px;
   background-size: cover;
   transition: all 1s;
-  
+  position: relative;
 }
 
-/* Logo */
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .header {
+    background-image: url(../img/background/bkgdeskedit.jpeg);
+    background-position: 0 -30px;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+  }
+}
 
-.logo-text{
+
+
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    background-image: url(../img/background/bkgdeskedit.jpeg);
+    background-position: 0 -140px;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+  }
+}
+
+/* media query laptop */
+@media only screen and (min-width: 1024px){
+  .header {
+    background-image: url(../img/background/bkgdeskedit.jpeg);
+    background-position: 0 -200px;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+  }
+}
+
+
+
+                                                                        /* LOGO */
+.logo-text {
   font-size: 4.5rem;
-  letter-spacing: 7px;  
+  letter-spacing: 7px;
+}
+
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .logo-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
 }
 
 
 
-.nav-a{
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-text {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+  }
+}
+
+
+                                                                          /* NAV BAR */
+
+.nav-a {
   color: rgb(80, 35, 1);
   font-size: 1.6rem;
   border-radius: 3px;
 }
 
-.nav-a:hover{
-  background-color: rgb(230, 195, 175);
-  transition: all .7s;
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-a {
+    color: rgb(80, 35, 1);
+    font-size: 1.2rem;
+    border-radius: 3px;
+  }
 }
 
-.header-h1{
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+.contenedor-a{
+  display: none;
+}
+}
+
+
+
+.nav-a:hover {
+  background-color: rgb(230, 195, 175);
+  transition: all 0.7s;
+}
+
+
+                                                                          /* TITULO */
+
+.header-h1 {
   color: rgb(80, 35, 1);
   font-size: 10rem;
   font-family: "Oxygen", sans-serif;
@@ -108,19 +182,84 @@ background-color: #fff;
   margin: 0 0 0 -6px;
 }
 
-.header-h2{
+
+.header-h2 {
   color: #000;
   font-size: 3rem;
   padding: 0px 0;
 }
 
-
-.container-titulo{
+.container-titulo {
   margin: 40px 0 0 150px;
 }
 
 
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .header-h1 {
+    color: rgb(80, 35, 1);
+    font-size: 5rem;
+    font-family: "Oxygen", sans-serif;
+    line-height: 8px;
+    font-weight: 400;
+    padding: 15px 0 30px 0;
+    
+  }
+  
+  
+  .header-h2 {
+    color: #000;
+    font-size: 1.3rem;
+    padding: 0px 0;
+  }
+  
+  .container-titulo {
+    margin: 10px 0 0 0px;
+  }
+}
 
+
+
+
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-h1 {
+    color: rgb(80, 35, 1);
+    font-size: 8rem;
+    font-family: "Oxygen", sans-serif;
+    line-height: 8px;
+    font-weight: 400;
+    padding: 50px 0 72px 0;
+    margin: 0 0 0 -6px;
+  }
+  
+  
+  .header-h2 {
+    color: #000;
+    font-size: 2.5rem;
+    padding: 0px 0;
+  }
+  
+  .container-titulo {
+    margin: 0 0 0 0px;
+  }
+}
+
+
+
+
+.header::after {
+  content: "";
+  display: block;
+  margin-bottom: -2px;
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 /**
 * 04. INDEX
@@ -130,43 +269,144 @@ background-color: #fff;
 
 /*---------------------------------------------------MAIN-------------------------------------------------*/
 
-
-
-.especialidades-texto h2{
+.especialidades-texto h2 {
   color: rgb(80, 35, 1);
   font-size: 4rem;
 }
 
-.especialidades-texto h3{
+.especialidades-texto h3 {
   font-size: 3rem;
 }
 
-.especialidades-texto p{
+.especialidades-texto p {
   font-size: 2rem;
 }
 
-.card-img-filter{
-   filter: brightness(.5);
+
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .especialidades-texto h2 {
+    color: rgb(80, 35, 1);
+    font-size: 2.5rem;
+  }
+  
+  .especialidades-texto h3 {
+    font-size: 1.9rem;
+  }
+  
+  .especialidades-texto p {
+    font-size: 1.5rem;
+  }
 }
 
 
-.card{
-    
-  clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);  
+.card-img-filter {
+  filter: brightness(0.5);
 }
 
-.card-effect:hover .card{
-  transition:all .7s;
-  clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+.card h4 {
+  transition: all 0.7s;
+}
+
+.card-effect:hover .card h4 {
+  transform: scale(1.1);
+}
+
+.card-text-style h4 {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+
+.card-text-style p {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+
+.card-text-style a {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  transition: all 0.4s;
 }
 
 
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .card-text-style h4 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+  
+  .card-text-style p {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .card-text-style a {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    transition: all 0.4s;
+  }
+}
 
 
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-text-style h4 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  
+  .card-text-style p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .card-text-style a {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+  }
+}
 
 
+.card-text-style a:hover {
+  transform: scale(1.1);
+}
+
+/**
+* 04. INDEX
+
+/*---------------------------------------------------FOOTER-------------------------------------------------*/
+
+.footer-style {
+  background-color: gray;
+}
+
+.logo-text-footer {
+  font-size: 2.5rem;
+  letter-spacing: 7px;
+}
+
+/* media query Mobile */
+@media only screen and (max-width: 424px) {
+  .logo-text-footer {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 
 
+/* media query tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .logo-text-footer {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+
+}
 
 /* #contenedor-logo {
   grid-area: logo;
@@ -274,7 +514,7 @@ header ul {
 
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
-@media only screen and (min-width: 955px) {
+/* @media only screen and (min-width: 955px) {
 
 
   #header {
@@ -360,8 +600,7 @@ header ul {
   }
 
 
-}
-
+} */
 
 /**
 * 04. INDEX
@@ -371,7 +610,7 @@ header ul {
 
 /*---------------------------------------------------MAIN-------------------------------------------------*/
 
-#main-portada {
+/* #main-portada {
   margin: 8.5rem 1rem 3rem 1rem;
   height: 70vh;
   position: relative;
@@ -413,7 +652,7 @@ header ul {
   font-family: "Tangerine", cursive;
   font-size: 4rem;
   font-weight: 300;
-}
+} */
 
 /**
 * 04. INDEX
@@ -422,7 +661,7 @@ header ul {
 */
 
 /*---------------------------------------------------MAIN-------------------------------------------------*/
-
+/* 
 @media only screen and (min-width: 480px) and (max-width: 954px) {
   #main-portada {
     margin: 8.5rem 1rem 3rem 1rem;
@@ -467,7 +706,7 @@ header ul {
     font-size: 5rem;
     font-weight: 400;
   }
-}
+} */
 
 /* @media only screen and (min-width: 769px) {
   body {
@@ -483,7 +722,7 @@ header ul {
 
 /*---------------------------------------------------FOOTER-------------------------------------------------*/
 
-.footer {
+/* .footer {
   background-color: #e8c3a8d3;
   height: 5rem;
   display: flex;
@@ -495,7 +734,7 @@ header ul {
 
 .contenedor-footer {
   font-family: "Oxygen", sans-serif;
-}
+} */
 
 /*############################################################################################################*/
 /*############################################################################################################*/
@@ -505,8 +744,7 @@ header ul {
 /*############################################################################################################*/
 /*############################################################################################################*/
 
-
-.contenedor-carrousel{
+/* .contenedor-carrousel{
   margin: 0 auto;
   background-color: #813313;
   width: 70%;
@@ -570,7 +808,7 @@ header ul {
 }
 #li-especialidad-psorganizacional {
   background-image: url(../img/especialidades/psicologiaOrganizacional.jpg);
-}
+} */
 
 /*############################################################################################################*/
 /*############################################################################################################*/
@@ -580,14 +818,14 @@ header ul {
 /*############################################################################################################*/
 /*############################################################################################################*/
 
-.container-contacto {
+/*.container-contacto {
   width: 85%; /*para que siempre ocupe el % indicado del espacio disponible*/
-  max-width: 1800px;
+/*max-width: 1800px;
   height: 40rem;
-  margin: 10rem auto; /*Para centrar contenido DIV*/
-}
+  margin: 10rem auto;
+}*/
 
-.formulario-contacto {
+/* .formulario-contacto {
   background-color: #d8e3dd52;
   list-style: none;
   width: 80rem;
@@ -636,4 +874,4 @@ header ul {
   border-radius: 5px;
   margin: 0rem 1rem 0rem 1.5rem;
   padding: 1rem;
-}
+} */
