@@ -39,12 +39,19 @@
 <body>
   <header class="header">
     <div class="container vh-50">
+      
       <!-- Navbar -->
-      <nav class="row justify-content-between align-items-center text-uppercase pt-5">
+      <nav class="row justify-content-between align-items-center text-uppercase pt-1 pt-sm-2 pt-md-3 pt-lg-5">
+        
         <!-- logo -->
         <a href="#" class="col-auto text-reset logo-text">
           <i class="fa-brands fa-pagelines"></i>Mariné Romero
         </a>
+
+        <!-- Menu mobile/tablet -->        
+        <span class="col-auto menu_icon"><iconify-icon icon="line-md:menu" style="color: #502301;" width="24" height="24"></iconify-icon></span>
+
+
         <!-- links -->
         <div class="col-auto contenedor-a">
           <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Inicio</a>
@@ -56,8 +63,8 @@
       </nav>
 
       <!-- descripcion -->
-      <div class="row h-30 h-md-100 h-lg-100 d-flex align-items-center">
-        <div class="col-12 col-lg-10 container-titulo">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 container-titulo">
           <!-- Titulo -->
           <h2 class="header-h2 text-capitalize">20 años pensando la</h2>
           <h1 class="header-h1 text-capitalize">Psicología</h1>
@@ -98,7 +105,7 @@
 
               <p class="text-capitalize">un espacio para conectarte con vos y tus sentimientos</p>
 
-              <a href="#" class="text-reset">Conocé Más</a>
+              <a href="#" class="text-reset">Conocé Más...</a>
             </div>
           </div>
         </article>
@@ -113,14 +120,14 @@
 
               <p class="text-capitalize">Abrí tu mente a un mundo de infinitas posibilidades</p>
 
-              <a href="#" class="text-reset">Conocé Más</a>
+              <a href="#" class="text-reset">Conocé Más...</a>
             </div>
           </div>
         </article>
 
         <!-- card #3 -->
         <article class="col-12 col-md-6 col-lg-4 mt-3 mt-sm-3 mt-md-1 mt-lg-0 card-effect card-text-style">
-          <div class="card" data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+          <div class="last-card card" data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
             <img src="./img/especialidades/psicologiaOrganizacional600x391.jpg" alt="Psicología Organizacional"
               class="card-img card-img-filter">
             <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
@@ -128,7 +135,7 @@
 
               <p class="text-capitalize">Entendé el comportamiento del capital humano de tu empresa</p>
 
-              <a href="#" class="text-reset">Conocé Más</a>
+              <a href="#" class="text-reset">Conocé Más...</a>
             </div>
           </div>
         </article>
@@ -138,7 +145,7 @@
 
   <!-- FOOTER -->
 
-  <footer class="footer-style text-white mt-5 py-5">
+  <footer class="footer-style text-white py-5">
     <div class="container">
       <!-- LOGO -->
       <div class="row">
@@ -172,7 +179,7 @@
           </li>
         </ul>
 
-        <p class="text-center text-capitalize mt-5">diseñado por Charlie Pelayes - todos los derechos reservados - 2022</p>
+        <p class="text-center text-capitalize mt-5">©diseñado por Charlie Pelayes - todos los derechos reservados - 2022</p>
       </div>
 
 
@@ -193,6 +200,9 @@
   <script>
     new WOW().init();
   </script>
+
+  <!-- ICONIFY -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
   <!-- JS PROPIO -->
   <script src="./js/scripts.js"></script>
