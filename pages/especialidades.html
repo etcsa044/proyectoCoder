@@ -6,12 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+  <!-- AOS STYLES -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ANIMATE STYLE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- CSS BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS PROPIO-->
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
   <!-- GOOGLE-FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,111 +37,168 @@
 </head>
 
 <body>
-  <header id="header" class="contenedor">
-    <div id="contenedor-logo">
-      <a href="../index.html" class="logo">MARINÉ ROMERO</a>
-    </div>
+  <header class="header">
+    <div class="container vh-50">
+      <!-- Navbar -->
+      <nav class="row justify-content-between align-items-center text-uppercase pt-5">
+        <!-- logo -->
+        <a href="#" class="col-auto text-reset logo-text">
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
+        </a>
+        <!-- links -->
+        <div class="col-auto contenedor-a">
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Inicio</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Especialidades</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Turnos</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Contactos</a>
+          <a href="#" class="text-reset px-md-2 px-lg-4 nav-a">Sobre Mi</a>
+        </div>
+      </nav>
 
-    <div id="contenedor-menu">
-      <span id="menu-icon">
-        <img src="../img/Iconos/logoMenuNegro24px.png" alt="menu_icon" /></span>
-    </div>
-
-    <div id="contenedor-redes">
-      <ul id="ul-redes" class="ul-redes">
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoLinkedinnegro24px.png" alt="logo linkedin" /></a>
-        </li>
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoInstagramnegro24px.png"
-              alt="logo Instagram" /></a>
-        </li>
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoWspNegro24px.png" alt="logo Whatssap" /></a>
-        </li>
-      </ul>
-    </div>
-
-    <nav id="nav" class="nav">
-      <ul id="ul-nav">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="acercaDeMi.html">Acerca de mi</a></li>
-        <li><a class="active" href="especialidades.html">Especialidades</a></li>
-        <li><a href="turnos.html">Turnos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-index">
-    <section>
-      <div id="portada-titulo">
-        <h1>Especialidades</h1>
-      </div>
-      <div class="contenedor-carrousel">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="../img/especialidades/psicoterapiaIndividual300x196jpg.jpg" class="d-block w-100"
-                alt="Psicoterapia Individual">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Psicoterapia</h5>
-                <p>Un espacio donde conectar con vos.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="../img/especialidades/access-bars300x196.gif" class="d-block w-100" alt="Barras de Access">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Terapia de Barras de Access Conciousness</h5>
-                <p>Abrí tu mente a un mundo de posibilidades infinitas.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="../img/especialidades/psicologiaOrganizacional300x196.jpg" class="d-block w-100"
-                alt="Psicología Organizacional">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Psicología Organizacional</h5>
-                <p>Entendé el compartamiento y la interaccón del capital humano de tu organización.</p>
-              </div>
-            </div>
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+      <!-- descripcion -->
+      <div class="row h-30 h-md-100 h-lg-100 d-flex align-items-center">
+        <div class="col-12 col-lg-10 container-titulo">
+          <!-- Titulo -->
+          <h2 class="header-h2 text-capitalize">20 años pensando la</h2>
+          <h1 class="header-h1 text-capitalize">Psicología</h1>
+          <h2 class="header-h2 text-capitalize"> como una herramienta de crecimiento personal.</h2>
         </div>
       </div>
+    </div>
+    <img src="./img/cuts/cut-header.svg" alt="">
+  </header>
+
+
+
+  <!-- Especialidades -->
+  <main class="main-index mb-5">
+    <section class="container">
+      <div class="row justify-content-md-center">
+        <!-- textos -->
+        <div class="col-12 text-center especialidades-texto mb-5">
+          <h2 class="especialidades-h2 text-uppercase mb-4">Especialidades</h2>
+          <h3 class="text-capitalize">Todo mi conocimiento a tu disposición.</h3>
+          <p class="text-muted">Estas son algunas de las áreas en las que me especializo, si no encontrás lo que buscás,
+            no dudes en dejarme tu
+            mensaje en la sección de <strong>contacto</strong> </p>
+        </div>
+
+
+        <!-- cards -->
+
+        <!-- card #1 -->
+        <article class="col-12 col-md-6 col-lg-4  mb-sm-2 mt-md-1 mt-lg-0 card-effect card-text-style">
+
+          <div class="card" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="500">
+            <img src="./img/especialidades/psicoterapiaIndividual600x391.jpg" alt="PsicoTerapia"
+              class="card-img card-img-filter">
+
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
+              <h4>Psicoterapia</h4>
+
+              <p class="text-capitalize">un espacio para conectarte con vos y tus sentimientos</p>
+
+              <a href="#" class="text-reset">Conocé Más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card #2 -->
+        <article class="col-12 col-md-6 col-lg-4 mt-3 mt-sm-3 mt-md-1 mt-lg-0 card-effect card-text-style">
+          <div class="card" data-aos="zoom-out-up" data-aos-duration="500">
+            <img src="./img/especialidades/access-bars600x391.gif" alt="Terapia de Barras"
+              class="card-img card-img-filter">
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
+              <h4>Terapia de Barras</h4>
+
+              <p class="text-capitalize">Abrí tu mente a un mundo de infinitas posibilidades</p>
+
+              <a href="#" class="text-reset">Conocé Más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card #3 -->
+        <article class="col-12 col-md-6 col-lg-4 mt-3 mt-sm-3 mt-md-1 mt-lg-0 card-effect card-text-style">
+          <div class="card" data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+            <img src="./img/especialidades/psicologiaOrganizacional600x391.jpg" alt="Psicología Organizacional"
+              class="card-img card-img-filter">
+            <div class="card-img-overlay d-flex text-white flex-column justify-content-around text-center">
+              <h4>Psicología Organizacional</h4>
+
+              <p class="text-capitalize">Entendé el comportamiento del capital humano de tu empresa</p>
+
+              <a href="#" class="text-reset">Conocé Más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="contenedor-footer">
-      <p>Designed by @CharliePelayes - 2022</p>
+  <!-- FOOTER -->
+
+  <footer class="footer-style text-white mt-5 py-5">
+    <div class="container">
+      <!-- LOGO -->
+      <div class="row">
+        <a href="" class="col-12 col-md-4 text-reset text-uppercase d-flex align-items-center justify-content-center logo-text-footer">
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
+        </a>
+
+        <!-- MENU -->
+        <ul class="col-6 col-md-4 d-flex flex-column align-items-center list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2"><strong>recursos</strong> </li>
+          <li class="mb-2"><a href="#" class="text-reset">Inicio</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Especialidades</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Turnos</a></li>
+          <li class="mb-2"><a href="#" class="text-reset">Contacto</a></li>
+          <li class=""><a href="#" class="text-reset"></a>Sobre Mi</li>
+        </ul>
+
+        <!-- REDES SOCIALES -->
+
+        <ul class="col-6 col-md-4 list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2 text-center"><strong>redes</strong></li>
+
+          <li class="font-weight-bold text-uppercase d-flex justify-content-center mt-5">
+            <!-- Instagram -->
+            <a href="" class="text-reset me-5"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <!-- Linkedin -->
+            <a href="" class="text-reset me-5"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <!-- Whatsapp -->
+            <a href="" class="text-reset "><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
   </footer>
 
+  <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="../js/scripts.js"></script>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- JS WOW -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- JS PROPIO -->
+  <script src="./js/scripts.js"></script>
+
   <!--JS-BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
