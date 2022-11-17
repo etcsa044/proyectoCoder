@@ -471,81 +471,92 @@ body {
 
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
-.carrousel-style h2{
+.carrousel-style h2 {
   font-size: 5rem;
   color: #fff;
-  text-shadow: 1px 1px .9px#000;
+  text-shadow: 1px 1px 0.9px#000;
 }
 
-.carrousel-style p{
+.carrousel-style p {
   font-size: 1.8rem;
   color: #fff;
   letter-spacing: 4px;
   text-shadow: 1px 1px 1px#000;
 }
 
-
-.contenedor-iframe{
-  display: grid;
+.contenedor-iframe {
+  display: none;
   grid-template-areas:
-  "iframe1 descripcion1"
-  "descripcion2 iframe2"
-  "iframe3 descripcion3";
+    "iframe1 descripcion1"
+    "descripcion2 iframe2"
+    "iframe3 descripcion3";
 
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
+
+@media only screen and (min-width: 1200px) {
+  .contenedor-iframe {
+    display: grid;
+  }
+}
+
 /* ESPECIALIDADES - Informacion Barras */
-#iframe-barras{
+#iframe-barras {
   grid-area: iframe1;
 }
 
-#descripcion-barras{
+#descripcion-barras {
   grid-area: descripcion1;
   font-size: 1.6rem;
   background-color: rgba(222, 184, 135, 0.337);
   padding: 2px 5px;
 }
 
-#descripcion-barras h3{
+#descripcion-barras h3 {
   font-size: 3rem;
 }
 
 /* ESPECIALIDADES - Informacion Psicoterapia */
 
-#iframe-pst{
+#iframe-pst {
   grid-area: iframe2;
 }
 
-#descripcion-psicoterapia{
+#descripcion-psicoterapia {
   grid-area: descripcion2;
   font-size: 1.6rem;
   background-color: rgba(215, 187, 151, 0.575);
   padding: 2px 5px;
 }
 
-#descripcion-psicoterapia h3{
+#descripcion-psicoterapia h3 {
   font-size: 3rem;
 }
 
 /* ESPECIALIDADES - Informacion Psic. Organiz. */
 
-#iframe-pso{
+#iframe-pso {
   grid-area: iframe3;
 }
 
-#descripcion-organizacion{
+#descripcion-organizacion {
   grid-area: descripcion3;
   font-size: 1.6rem;
   background-color: rgba(225, 172, 102, 0.575);
   padding: 2px 5px;
 }
 
-#descripcion-organizacion h3{
+#descripcion-organizacion h3 {
   font-size: 3rem;
 }
 
+@media only screen and (min-width: 1200px) {
+  .descripcion-mobile {
+    display: none;
+  }
+}
 
 /**
 * 04. ############################################## CONTACTO #################################################
