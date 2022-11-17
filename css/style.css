@@ -58,7 +58,7 @@ ul {
 
 body {
   background-color: #fff;
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 /**
@@ -77,7 +77,7 @@ body {
   position: relative;
 }
 
-.header-sec{
+.header-sec {
   background-image: url(../img/background/bkg-nuevoCut.jpg);
   background-position: 75% 58%;
   background-size: cover;
@@ -95,19 +95,12 @@ body {
   }
 }
 
-
-
-
-
-
 /* LOGO */
 .logo-text {
   font-size: 1.5rem;
   letter-spacing: 3px;
   margin-left: 10px;
 }
-
-
 
 /* media query mobile-xl */
 @media only screen and (min-width: 576px) {
@@ -474,10 +467,12 @@ body {
 *
 
 
+/*---------------------------------------------------main-------------------------------------------------*/
+
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
 .carrousel-style h2{
-  font-size: 10rem;
+  font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px .9px#000;
 }
@@ -552,7 +547,6 @@ body {
 }
 
 
-
 /**
 * 04. ############################################## CONTACTO #################################################
 *
@@ -560,67 +554,66 @@ body {
 
 /*---------------------------------------------------HEADER-------------------------------------------------*/
 
-
-#contact{
-  padding:10px 0 10px;
+#contact {
+  padding: 10px 0 10px;
 }
 
-.contact-text{
-  margin:45px auto;
+.contact-text {
+  margin: 45px auto;
 }
 
-.mail-message-area{
-  width:100%;
-  padding:0 15px;
-}
-
-.mail-message{
+.mail-message-area {
   width: 100%;
-  background:rgba(255,255,255, 0.8) !important;
+  padding: 0 15px;
+}
+
+.mail-message {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) !important;
   -webkit-transition: all 0.7s;
   -moz-transition: all 0.7s;
   transition: all 0.7s;
-  margin:0 auto;
+  margin: 0 auto;
   border-radius: 0;
 }
 
-.not-visible-message{
-  height:0px;
+.not-visible-message {
+  height: 0px;
   opacity: 0;
 }
 
-.visible-message{
-  height:auto;
+.visible-message {
+  height: auto;
   opacity: 1;
-  margin:25px auto 0;
+  margin: 25px auto 0;
 }
 
 /* Input Styles */
 
-.form{
+.form {
   width: 100%;
   padding: 15px;
-  background:#f8f8f8;
-  border:1px solid rgba(80, 35, 1, 0.145);
-  margin-bottom:25px;
-  color:#727272 !important;
-  font-size:13px;
+  background: #f8f8f8;
+  border: 1px solid rgba(80, 35, 1, 0.145);
+  margin-bottom: 25px;
+  color: #727272 !important;
+  font-size: 13px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.form:hover{
-  border:1px solid rgb(80, 35, 1);
+.form:hover {
+  border: 1px solid rgb(80, 35, 1);
 }
 
-.form:focus{
+.form:focus {
   color: white;
   outline: none;
-  border:1px solid rgb(80, 35, 1);
+  border: 1px solid rgb(80, 35, 1);
 }
 
-.textarea{
+.textarea {
   height: 200px;
   max-height: 200px;
   max-width: 100%;
@@ -628,60 +621,60 @@ body {
 
 /* Generic Button Styles */
 
-.button{
-  padding:8px 12px;
-  background:#1e4559;
+.button {
+  padding: 8px 12px;
+  background: #1e4559;
   display: block;
-  width:120px;
-  margin:10px 0 0px 0;
-  border-radius:3px;
+  width: 120px;
+  margin: 10px 0 0px 0;
+  border-radius: 3px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  text-align:center;
-  font-size:1.5rem;
-  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover{
-  background:#8BC3A3;
-  color:white;
+.button:hover {
+  background: #8bc3a3;
+  color: white;
 }
 
 /* Send Button Styles */
 
-.form-btn{
-  width:180px;
+.form-btn {
+  width: 180px;
   display: block;
   height: auto;
-  padding:15px;
-  color:rgb(80, 35, 1);
-  background:rgb(230, 195, 175);
-  border:none;
-  border-radius:3px;
+  padding: 15px;
+  color: rgb(80, 35, 1);
+  background: rgb(230, 195, 175);
+  border: none;
+  border-radius: 3px;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  margin:auto;
-  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  margin: auto;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form-btn:hover{
-  background:rgb(244, 171, 130);
+.form-btn:hover {
+  background: rgb(244, 171, 130);
   color: rgb(80, 35, 1);
-  border:none;
+  border: none;
 }
 
-.form-btn:active{
+.form-btn:active {
   opacity: 0.9;
 }
-center{
-margin-top:330px;
+center {
+  margin-top: 330px;
 }
 input {
   position: relative;
