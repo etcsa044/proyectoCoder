@@ -6,9 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+  <!-- AOS STYLES -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ANIMATE STYLE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- CSS BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS PROPIO-->
   <link rel="stylesheet" href="../css/style.css" />
@@ -25,94 +39,187 @@
 </head>
 
 <body>
-  <header id="header" class="contenedor">
-    <div id="contenedor-logo">
-      <a href="../index.html" class="logo">MARINÉ ROMERO</a>
-    </div>
+  <header class="header header-sec">
+    <div class="container vh-auto">
 
-    <div id="contenedor-menu">
-      <span id="menu-icon">
-        <img src="../img/Iconos/logoMenuNegro24px.png" alt="menu_icon" /></span>
-    </div>
+      <!-- Navbar -->
+      <nav class="row justify-content-between align-items-center text-uppercase pt-1 pt-sm-2 pt-md-3 pt-lg-5">
 
-    <div id="contenedor-redes">
-      <ul id="ul-redes" class="ul-redes">
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoLinkedinnegro24px.png" alt="logo linkedin" /></a>
-        </li>
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoInstagramnegro24px.png" alt="logo Instagram" /></a>
-        </li>
-        <li>
-          <a href="#"><img class="icono-redes" src="../img/Iconos/logoWspNegro24px.png" alt="logo Whatssap" /></a>
-        </li>
-      </ul>
-    </div>
+        <!-- logo -->
+        <a href="../index.html" class=" col-10 col-sm-auto text-reset logo-text">
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
+        </a>
 
-    <nav id="nav" class="nav">
-      <ul id="ul-nav">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="acercaDeMi.html">Acerca de mi</a></li>
-        <li><a href="especialidades.html">Especialidades</a></li>
-        <li><a href="turnos.html">Turnos</a></li>
-        <li><a class="active" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Menu mobile/tablet -->
+        <span class="col-auto menu-icon">
+          <iconify-icon icon="line-md:menu" style="color: #502301;" width="24" height="24"></iconify-icon>
+        </span>
 
-<body>
 
-  <main class="main">
-    <div class="container">
-      <h1 class="Titulo">Contacto</h1>
-    </div>
-
-    <div class="container-contacto">
-      <div class="formulario-contacto">
-        <form class="formulario-contacto" action="">
-          <ul>
-            <li>
-              <label for="nombreApellido">Nombre y Apellido:</label>
-              <input type="text" id="nombreApellido" />
-            </li>
-
-            <li>
-              <label for="mail">Direccion de E-Mail:</label>
-              <input type="email" id="mail" />
-            </li>
-
-            <li>
-              <label for="telefono">Telefono de Contacto:</label>
-              <input type="tel" id="telefono" />
-            </li>
-
-            <li>
-              <label for="comentario">Comentario:</label>
-              <textarea class="texarea-contacto" name="" id="comentario" cols="30" rows="10"></textarea>
-            </li>
+        <!-- links -->
+        <div id="contenedor-a" class="col-auto contenedor-a">
+          <ul class="list-a">
+            <li><a href="../index.html" class="text-reset px-md-2 px-lg-4 nav-a">Inicio</a></li>
+            <li><a href="especialidades.html" class="text-reset px-md-2 px-lg-4 nav-a">Especialidades</a></li>
+            <li><a href="turnos.html" class="text-reset px-md-2 px-lg-4 nav-a">Turnos</a></li>
+            <li><a href="contacto.html" class="text-reset px-md-2 px-lg-4 nav-a">Contacto</a></li>
+            <li><a href="sobreMi.html" class="text-reset px-md-2 px-lg-4 nav-a">Sobre Mi</a></li>
           </ul>
+        </div>
+      </nav>
 
-          <div class="botones">
-            <input type="reset">
-            <input type="submit">
-          </div>
-        </form>
+      <!-- descripcion -->
+      <div class="row d-flex align-items-center">
+        <!-- Titulo -->
+        <!-- <div class="col-12 container-titulo">          
+          <h2 class="header-h2 text-capitalize">20 años pensando la</h2>
+          <h1 class="header-h1 text-capitalize">Psicología</h1>
+          <h2 class="header-h2 text-capitalize"> como una herramienta de crecimiento personal.</h2>
+        </div> -->
       </div>
     </div>
+    <img src="../img/cuts/cut-header.svg" alt="">
+  </header>
+
+
+
+  <!-- CONTACTO -->
+  <main class="main-index mb-5">
+    <section class="container">
+
+
+
+      <div class="row justify-content-md-center">
+        <!-- textos -->
+        <div class="col-12 text-center especialidades-texto mb-5">
+          <h2 class="especialidades-h2 text-uppercase mb-4">Consultas</h2>
+          <h3 class="text-capitalize">Completa el siguiente Formulario,</h3>
+          <p class="text-muted"> No dudes en dejarme tu mensaje y te contestaré a la brevedad:</p>
+        </div>
+      </div>
+
+
+      <!-- formulario de Contacto -->
+      <div class="inner contact">
+        <!-- Form Area -->
+        <div class="contact-form">
+          <!-- Form -->
+          <form id="contact-us" method="post" action="#">
+            <!-- Left Inputs -->
+            <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+              <!-- Name -->
+              <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
+              <!-- Email -->
+              <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+              <!-- Subject -->
+              <input type="tel" name="subject" id="subject" required="required" class="form"
+                placeholder="Nro. de Telefono" />
+            </div><!-- End Left Inputs -->
+            <!-- Right Inputs -->
+            <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+              <!-- Message -->
+              <textarea name="message" id="message" class="form textarea"
+                placeholder="Dejame tu consulta..."></textarea>
+            </div><!-- End Right Inputs -->
+            <!-- Bottom Submit -->
+            <div class="relative fullwidth col-xs-12">
+              <!-- Send Button -->
+              <button type="submit" id="submit" name="submit" class="form-btn semibold">Enviar</button>
+            </div><!-- End Bottom Submit -->
+            <!-- Clear -->
+            <div class="clear"></div>
+          </form>
+
+          <!-- Your Mail Message -->
+          <div class="mail-message-area">
+            <!-- Message -->
+            <div class="alert gray-bg mail-message not-visible-message">
+              <strong>Gracias!!</strong> Enviaste tu mensaje.
+            </div>
+          </div>
+
+        </div><!-- End Contact Form Area -->
+      </div><!-- End Inner -->
+
+
+
+
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="contenedor-footer">
-      <p>Designed by @CharliePelayes - 2022</p>
+  <!-- FOOTER -->
+
+  <footer class="footer-style text-white py-5">
+    <div class="container">
+      <!-- LOGO -->
+      <div class="row">
+        <a href=""
+          class="col-12 col-md-4 text-reset text-uppercase d-flex align-items-center justify-content-center logo-text-footer">
+          <i class="fa-brands fa-pagelines"></i>Mariné Romero
+        </a>
+
+        <!-- MENU -->
+        <ul class="col-6 col-md-4 d-flex flex-column align-items-center list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2"><strong>recursos</strong> </li>
+          <li class="mb-2"><a href="../index.html" class="text-reset">Inicio</a></li>
+          <li class="mb-2"><a href="especialidades.html" class="text-reset">Especialidades</a></li>
+          <li class="mb-2"><a href="turnos.html" class="text-reset">Turnos</a></li>
+          <li class="mb-2"><a href="contacto.html" class="text-reset">Contacto</a></li>
+          <li class=""><a href="sobreMi.html" class="text-reset">Sobre Mi</a></li>
+        </ul>
+
+        <!-- REDES SOCIALES -->
+
+        <ul class="col-6 col-md-4 list-unstyled">
+          <li class="font-weight-bold text-uppercase mb-2 text-center"><strong>redes</strong></li>
+
+          <li class="font-weight-bold text-uppercase d-flex justify-content-center mt-5">
+            <!-- Instagram -->
+            <a href="https://instagram.com/marine_romero.15?igshid=YmMyMTA2M2Y=" class="text-reset me-5"><i
+                class="fa-brands fa-instagram fa-2xl"></i></a>
+            <!-- Linkedin -->
+            <a href="https://www.linkedin.com/in/marin%C3%A9-romero-2b323741" class="text-reset me-5"><i
+                class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <!-- Whatsapp -->
+            <a href="https://api.whatsapp.com/send?phone=5492634399615
+            " class="text-reset "><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+          </li>
+        </ul>
+
+        <p class="text-center text-capitalize mt-5">©diseñado por Charlie Pelayes - todos los derechos reservados - 2022
+        </p>
+      </div>
+
+
     </div>
   </footer>
 
+  <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- JS WOW -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- ICONIFY -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+  <!-- JS PROPIO -->
   <script src="../js/scripts.js"></script>
+
   <!--JS-BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
